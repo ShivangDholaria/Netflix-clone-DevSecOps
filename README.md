@@ -1,4 +1,4 @@
-<div align="center">
+<!-- <div align="center">
   <img src="./public/assets/DevSecOps.png" alt="Logo" width="100%" height="100%">
 
   <br>
@@ -7,24 +7,17 @@
   </a>
 </div>
 
-<br />
+<br /> -->
 
 <div align="center">
   <img src="./public/assets/home-page.png" alt="Logo" width="100%" height="100%">
   <p align="center">Home Page</p>
 </div>
 
-# **Youtube Video for step by step Demonstration!**
-[![Video Tutorial](https://img.youtube.com/vi/g8X5AoqCJHc/0.jpg)](https://youtu.be/g8X5AoqCJHc)
 
+# Netflix Clone
 
-## Susbcribe:
-[https://www.youtube.com/@cloudchamp?
-](https://www.youtube.com/@cloudchamp?sub_confirmation=1)
-
-# Deploy Netflix Clone on Cloud using Jenkins - DevSecOps Project!
-
-### **Phase 1: Initial Setup and Deployment**
+<!-- ### **Phase 1: Initial Setup and Deployment**
 
 **Step 1: Launch EC2 (Ubuntu 22.04):**
 
@@ -561,7 +554,7 @@ sudo systemctl restart jenkins
    `http://<your-prometheus-ip>:9090/targets`
 
 
-####Grafana
+#### Grafana
 
 **Install Grafana on Ubuntu 22.04 and Set it up to Work with Prometheus**
 
@@ -752,7 +745,39 @@ To deploy an application with ArgoCD, you can follow these steps, which I'll out
 4. **Access your Application**
    - To Access the app make sure port 30007 is open in your security group and then open a new tab paste your NodeIP:30007, your app should be running.
 
-**Phase 7: Cleanup**
+# **Phase 7: Cleanup**
 
 1. **Cleanup AWS EC2 Instances:**
-    - Terminate AWS EC2 instances that are no longer needed.
+    - Terminate AWS EC2 instances that are no longer needed. -->
+
+
+## Running the App Locally
+
+To run the application locally, follow these steps:
+1. **Clone the repository**:
+    ```sh
+    git clone <repository-url>
+    cd <repository-directory>
+    ```
+2. **Install dependencies**:
+    Ensure you have the necessary dependencies installed. You can use a package manager like `npm` or `yarn`:
+    ```sh
+    npm install
+    # or
+    yarn install
+    ```
+3. **Set up environment variables**:
+    In the `.env` file in the root directory of the project and replace the 'XXXXXX' with the TMDB API Key .
+
+4. **Run the application**:
+    Start the application using the following command:
+    ```sh
+    npm start
+    # or
+    yarn start
+    ```
+
+5. **Access the application**:
+    Open your web browser and navigate to `http://localhost:5173` (or the port specified in your environment variables) to see the application running.
+
+By following these steps, you should be able to run the application locally on your machine.
